@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <script>
+      
+      
+        var rightnow = new Date();
+        alert(rightnow);
+
+        
+
+
+        var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+        var date = new Date();
+        var currentMonth = date.getMonth();
+        var latestMonth = months[currentMonth];
+        alert(latestMonth);
+      
+
+
+        var months = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+        var date = new Date();
+        var currentday = date.getDay();
+        var latestday = months[currentday];
+        alert(latestday);
+
+
+
+        var days = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+        var date = new Date();
+        var currday = date.getDay();
+
+        if(0 === currday || 6 === currday)
+        {
+            alert("It's Fun Day");
+        }
+
+
+ 
+        var date = new Date();
+        var currday = date.getDate();
+
+        if(currday <= 15){
+                alert("Fisrt Fifteen days of the month");
+        }
+        else{
+            alert("Last fifteen days of the month");
+        }
+
+
+
+        var date = new Date();
+        var currhour = date.getHours();
+
+        if(currhour <= 12){
+            alert("Its AM")
+        }
+        else{
+            alert("Its PM")
+        }
+
+  
+
+
+    var date = new Date();
+    var nextyear = date.setFullYear(2020);
+    var nextmonth = date.setMonth(11);
+    var nextdate = date.setDate(31);
+    var nextdays = date.getDay();
+    var days = ["Sun","Mon","Tue","Wed","Thur","Fri","Sat"];
+    var months = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+
+    for(var i = 0 ; i <=months.length; i++ ){
+        if(months[i]=== nextmonth){
+            for(var j = 0 ; j <= days.length ; j++){
+                if(days[j] === nextdays)
+                {
+                    alert("later dates: " +days+" " +month+" "+nextyear);
+                }
+            }
+        }
+    }
+
+
+
+    </script>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adv JS 1</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+      /* ques1
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        var arr2 = arr.map(
+            function(num){
+                return num;
+            }
+        );
+
+        alert("Array 1 = " +arr);
+        alert("Array 2 = " +arr2);
+    */
+
+/* ques2
+    function square ()
+    {
+        var arr = [] ;
+        var arr2 = [];
+        var numbers = prompt("Enter Total numbers of which you want squares");
+        var totalNumbers = parseInt(numbers);
+
+        for(var i=0 ; i < totalNumbers ; i++)
+        {
+             arr[i] = parseInt(prompt("Enter number = "));
+        }
+        arr2 = arr.map(
+            function(num){
+                return Math.pow(num,2);
+            });
+        alert(arr);
+        alert(arr2);
+    }
+
+square();
+  */
+
+
+  //var arr = [1,2,3,4,5];
+  //var lambda = (lambda) => { return Math.pow(lambda,2);};
+  //alert(lambda());
+  var arr = [1,2,3,4,5,6,7,8,9,10];
+        var arr2 = arr.map(
+            (num)=>{
+                return Math.pow(num,2);
+            }
+        );
+
+        alert("Array 1 = " +arr);
+        alert("Array 2 = " +arr2);
+    
+    
+    
+    
+    
+    
+    </script>
+</html>

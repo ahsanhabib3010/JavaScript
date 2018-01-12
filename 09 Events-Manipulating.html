@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 48-52</title>
+    </head>
+    <body>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" id="userName"></td>
+                </tr>
+                
+                <tr>
+                    <td>Password : </td>
+                    <td><input type="password" id="pass"></td>
+                </tr>
+                
+                <tr>
+                    <td>Email : </td>
+                    <td> <input type="email" id="mail"> </td>
+                </tr>
+                
+                <tr>
+                    <td>Age : </td>
+                    <td> <input type="text" id="age"> </td>
+                </tr>
+             
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type="radio" id="gender" name="gender" value="Male"> Male <input type="radio" name="gender" value="Female"> Female </td>
+                </tr>
+           
+                <tr>
+                    <td colspan="2"> <input type="button" value="Sign Up" onclick="getDetails()"> </td>
+                </tr>
+            </table>
+        </form>
+<br>
+<br>
+<br>
+
+<h2>Details Here :</h2>
+        <form>
+            <table>
+                <tr>
+                    <td>Username : </td>
+                    <td><input type="text" id="uN"></td>
+                </tr>
+                <tr>
+                    <td>Email : </td>
+                    <td> <input type="email" id="mails"> </td>
+                </tr>
+                
+                <tr>
+                    <td>Age : </td>
+                    <td> <input type="text" id="umar"> </td>
+                </tr>
+            
+                <tr>
+                    <td>Gender : </td>
+                    <td><input type="radio" id="sex" name="sex" value="Male"> Male <input type="radio" name="sex" value="Female"> Female </td>
+                </tr>
+              
+            </table>
+        </form>
+
+
+
+
+        <p id="expendableParagraph">
+                Alkdsahf hflksa fslkfjmngfoith touherwoghegf 8ufandgiusa bgjkfdsangsdkjafhsangfsugjhlkt hsngghdsafkjwutrhykjshaf bsfkjwhcncxiusnxufnjdsfsuaskusagfm
+                <button id="expend" onclick="expend()">Read More...</button>
+        </p>
+
+
+          
+    </body>
+    <script>
+           
+         
+            function getDetails(){
+ 
+                    var user = document.getElementById("userName").value;
+                    var e_mail = document.getElementById("mail").value;
+                    var ages = document.getElementById("age").value;
+                    var genders = document.getElementById("gender").value;
+
+
+                    document.getElementById("uN").value = user;
+                    document.getElementById("mails").value = e_mail;
+                    document.getElementById("umar").value = ages;
+                    document.getElementById("sex").value = genders;
+
+}
+
+
+
+
+        function expend(){
+            var str = "Alkdsahf hflksa fslkfjmngfoith touherwoghegf 8ufandgiusa bgjkfdsangsdkjafhsangfsugjhlkt hsngghdsafkjwutrhykjshaf bsfkjwhcncxiusnxufnjdsfsuaskusagfm"+
+            "alkdsjfsahflksahdfkjaslkdfjsakjf lkdsfjlkajfashfka sadkfhsakdhfsdf shdfhkhdgak shsakhfashdkasjdf hskhfshsahfljalfafksah halkhfkasklgwoioieioerw <br> " +
+            " sakdjfksajfksalfjkjkajsdlf ahdsfhkslflksaj hsakhsadkfjlkas fshlksajfsafsalk fhsd gth gu fhsa jkghi twq grfsaujs";
+
+            document.getElementById("expendableParagraph").innerHTML = str;
+        }
+
+    </script>
+</html>
