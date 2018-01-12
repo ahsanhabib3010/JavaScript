@@ -12,7 +12,7 @@ Assignment 5-If...Else Conditions.
 -----------------------------------
 Assignment 6-Strings.
 ------------------------
-Assignment 7-Data and Time Functions.
+Assignment 7-Date and Time Functions.
 --------------------------------------
 Assignment 8-Date Methods and Functions.
 ----------------------------------------
